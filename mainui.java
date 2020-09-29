@@ -41,9 +41,9 @@ public class mainui {
 		while (newGame.getWrongGuesses() < 6) {
 			clearScreen();
 			printState(newGame.getWrongGuesses());
-			System.out.println("\n\n\n" +
-			newGame.getGuess() +
-			"\n\nLetters Guessed: " + guessedLetters +
+			System.out.println("\n\n\n");
+			System.out.println(newGame.getGuess());
+			System.out.println("\n\nLetters Guessed: " + guessedLetters +
 			"\nEnter Guess: ");
 			String newGuess = userInput.nextLine().toLowerCase();
 			if (newGuess.equals(null) || !newGuess.equals("")) {
